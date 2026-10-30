@@ -1,0 +1,16 @@
+ollama:
+  base_url: "http://localhost:11434"
+  chat_model: "llama3.2"
+  embedding_model: "nomic-embed-text"
+  timeout_seconds: 120
+
+chunking:
+  chunk_size: 900
+  chunk_overlap: 150
+
+vector_store:
+  path: "./chroma_data"
+  collection_name: "documents"
+
+retrieval:
+  top_k: 4
